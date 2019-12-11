@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage[12pt]{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{color,colortbl}
+
+\begin{document}
+
+\newpage
+\subsection*{Вариант 3}
+
+При рассмотрении этого варианта абелева подалгебра имеет вид:
+\begin{flushleft}
+\begin{tabular}{c}
+$e_{1}=\{1,0,0,0\};$ \\
+$e_{3}=\{0,1,0,0\};$ \\
+$e_{4}=\{a_{4}(z_{4}), b_{4}(z_{4}), 0 ,0\};$  \\
+$e_{6}=\{0,0,1,0\};$ \\
+\end{tabular}
+\end{flushleft}
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{6}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{4}}
+     = \frac{\partial f}{\partial z_{3}}.
+\end{aligned}
+\end{equation*}
+
+Видно, что составляющие выкторного поля $e_{7}$ : $a_{7}$, $b_{7}$ и $d_{7}$ - не имеют зависимости от переменной $z_{3}$, а $c_{7}$ будет содержать слагаемое $z_{3}$ в числе прочих. Таким образом, до расчёта коммутаторов, связанных с векторным полем $e_{4}$ для искомых векторных полей мы можем сказать следующее:
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{2}=\{ -z_{2} + a_{2}(z_{4}); b_{2}(z_{4}) ; c_{2}(z_{4}); d_{2}(z_{4})\} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{5}=\{ 2 \cdot z_{1} + a_{5}(z_{4}); z_{2} + b_{5}(z_{4}); c_{5}(z_{4});  d_{5}(z_{4})\} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{e_{7}=\{ a_{7}(z_{4}); b_{7}(z_{4});  z_{3} + c_{7}(z_{4}); d_{7}(z_{4})\}}
+\end{gathered}
+\end{equation*}
+
+Нам известно, что если хотя бы одна координата шести из семи полей равна нулю, то это сведетельствует о вырождении исходной интегральной поверхности. Рассмотрим два подслучая $e_{2} = 0$ и $e_{2} \neq 0$:
+% Для первого подслучая ($e_{2} \eq 0$) невырожденное решение достижимо только при $d_{5} \neq 0$ и $d_{7} \neq 0$, а во втором ($d_{2} \neq 0$)
+
+\begin{equation}
+\begin{gathered}
+$e_{2} = 0 \rightarrow $
+\left\{ \begin{array}{}
+$d_{5} \neq 0$
+\\
+$d_{7} \neq 0$
+\end{array}\right.
+\end{gathered}
+\end{equation}
+
+\begin{equation*}
+\begin{gathered}
+$e_{2} \neq 0 \rightarrow $
+\left[ \begin{array}{}
+$d_{5} \neq 0$ и $\forall d_{7}$
+\\
+$d_{7} \neq 0$ и $\forall d_{5}$
+\end{array}\right.
+\end{gathered}
+\end{equation*}
+
+\subsubsection*{Подслучай 1}
+
+Проведём частичное выпрямление $e_{2}$ относительно переменной $z_{4}$. Для этого положим $a_{2}(z_{4}) = 0, b_{2}(z_{4}) = 0, c_{2}(z_{4}) = 0, d_{2}(z_{4}) = 1$:
+% \begin{equation*}
+% \begin{gathered}
+% \end{gathered}
+% \end{equation*}
+\begin{equation*}
+\begin{gathered}
+e_{2} \rightarrow e_{2}=\{-z_{2}, 0, 0, 1\}
+\end{gathered}
+\end{equation*}
+
+Используя это, найдём шесть оставшихся коммутаторов: $[e_{2}, e_{4}]$, $[e_{5}, e_{4}]$, $[e_{7}, e_{4}]$, а также $[e_{2}, e_{7}]$, $[e_{2}, e_{5}]$ и $[e_{7}, e_{5}]$.
+
+\begin{equation*}
+\begin{gathered}
+$[$e_{2}, e_{4}$]$(f) = \Big(\frac{\partial a_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
++ \frac{\partial b_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}\Big)
+- b_{4}(z_{4}) \cdot \frac{\partial (-z_{2})}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{1}}
+= \frac{\partial f}{\partial z_{1}} \cdot \Big(\frac{\partial a_{4}(z_{4})}{\partial z_{4}} + b_{4}(z_{4})\Big)
++ \frac{\partial f}{\partial z_{2}} \cdot \frac{\partial b_{4}(z_{4})}{\partial z_{4}} = 0
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+% \begin{aligned}
+%   \fbox{
+%     \left\{ \begin{array}{}
+%      % \frac{\partial a_{4}(z_{4})}{\partial z_{4}} = -b_{4}(z_{4})
+%      \frac{\partial a_{4}(z_{4})}{\partial z_{4}} = -b_{4}(z_{4})
+%      % \\
+%      % \frac{\partial b_{4}(z_{4})}{\partial z_{4}} = 0
+%      \end{array}\right
+%    }
+% \end{aligned}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial a_{4}}{\partial z_{4}}\Big) = b_{4}
+   % \Big(\frac{}{}{A}{B}\Big) = -b_{4}(z_{4})
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial b_{4}}{\partial z_{4}}\Big) = 0
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+
+\subsubsection*{Подслучай 2}
+Окей, теперь это гавно прямо рядом. Ток руку протяни -- уже вляпался!
+
+% \begin{equation*}
+% \begin{gathered}
+% \fbox{ e_{5}=\{ 2 \cdot z_{1} + a_{5}(z_{4}); z_{2} + b_{5}(z_{4}); c_{5}(z_{4});  d_{5}(z_{4})\} }
+% \end{gathered}
+% \end{equation*}
+
+% \begin{equation*}
+% \begin{aligned}
+%
+% \end{aligned}
+% \end{equation*}
+
+\end{document}

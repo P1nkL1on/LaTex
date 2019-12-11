@@ -1,0 +1,889 @@
+\documentclass{article}
+\usepackage[12pt]{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{color,colortbl}
+
+
+\definecolor{honey}{RGB}{250, 200, 50}
+
+\begin{document}
+
+\section*{}
+\begin{flushleft}
+\textit{<Черновик>}
+\end{flushleft}
+\begin{flushright}
+Прохорченко Л.А., Господарикова И.С.
+\end{flushright}
+
+\section*{Задание:}
+Интегрирование алгебры Ли, для которой операция коммутации определена следующим образом
+
+\begin{table}[h]
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$[e_{1},e_{2}]$ & $[e_{1},e_{3}]$ & $[e_{1},e_{4}]$ & \cellcolor{honey} $[e_{1},e_{5}]$ & \cellcolor{honey} $[e_{2},e_{3}]$ & $[e_{2},e_{4}]$ & \cellcolor{honey} $[e_{2},e_{5}]$ & $[e_{3},e_{4}]$ & \cellcolor{honey} $[e_{3},e_{5}]$ & \cellcolor{honey} $[e_{4},e_{5}]$ & \cellcolor{honey} $[e_{6},e_{7}]$ \\
+\hline
+ $0$ & $0$ & $0$ & $2e_{1}$ &  $e_{1}$ & $0$ & $e_{2}+e_{3}$ & $0$ & $e_{3}$ &  $\beta e_{4}$ &  $e_{6}$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section*{Процесс решения:}
+Вначале нам нужно выпрямить предполагаемое пространство векторных полей. Для этого сначала выделим абелеву подалгебру нашей семимерной алгебры. Это такая подалгебра, в рамках которой любая комбинация базисных векторных полей при подсчёте коммутатора даёт $0$. Во взятом варианте можно выделить четырёхмерную абелеву подалгебру, включающую поля $e_{1}$, $e_{4}$, а также одно из полей $e_{2}$ и $e_{3}$ и одно из полей $e_{6}$ и $e_{7}$. Попытаемся выпрямить всю алгебру, рассмотрев три возможных вида полей абелевой подалгебры:
+
+\subsection*{Вариант 1}
+
+В этом варианте абелева подалгебра будет иметь вид:
+\begin{flushleft}
+\begin{tabular}{c}
+$e_{1}=\{1,0,0,0\};$ \\
+$e_{3}=\{0,1,0,0\};$ \\
+$e_{4}=\{0,0,1,0\};$ \\
+$e_{6}=\{0,0,0,1\};$ \\
+\end{tabular}
+\end{flushleft}
+
+Требуется определить выражения для полей, не вошедших в абелеву подалгебру: $e_{2}$, $e_{5}$ и $e_{7}$. Известен их общий вид:
+\begin{displaymath}
+e_{i}= \{ {a_{i}(z), b_{i}(z), c_{i}(z), d_{i}(z)} \}
+\end{displaymath}
+
+Из задания нам ивестно, что запись вида $e_{i}=\{a, b, c, d\}$ интерпретируется следующим образом:
+\begin{displaymath}
+e_{i}(f) = a \cdot \frac{\partial f}{\partial z_{1}}} + b \cdot \frac{\partial f}{\partial z_{2}}} + c \cdot \frac{\partial f}{\partial z_{3}}} + d \cdot \frac{\partial f}{\partial z_{4}}}
+\end{displaymath}
+
+По определению коммутатора:
+\begin{equation*}
+\begin{aligned}
+$[$e_{i}, e_{j}$]$(f)
+ = e_{i}(e_{j})(f) - e_{j}(e_{i})(f)
+  = e_{i}\bigg( a_{j} \cdot \frac{\partial f}{\partial z_{1}}
+   + b_{j} \cdot \frac{\partial f}{\partial z_{2}}
+    + c_{j} \cdot \frac{\partial f}{\partial z_{3}}
+     + d_{j} \cdot \frac{\partial f}{\partial z_{4}} \bigg)
+      - e_{j} \bigg( a_{i} \cdot \frac{\partial f}{\partial z_{1}}
+       + ... + d_{i} \cdot \frac{\partial f}{\partial z_{4}} \bigg)
+        = \\ = a_{i} \cdot \frac{\partial a_{j} }{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{1}}
+         + a_{i} \cdot a_{j} \cdot \frac{\partial^{2}f}{\partial z_{1}^{2}}
+          + a_{i} \cdot \frac{\partial b_{j} }{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{2}}
+           + a_{i} \cdot b_{j} \cdot \frac{\partial^{2}f}{\partial z_{1} \cdot z_{2}}
+          + ... + d_{i} \cdot \frac{\partial c_{j} }{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}} + d_{i} \cdot c_{j} \cdot \frac{\partial^{2}f}{\partial z_{3} \cdot z_{4}}
+       + \\ + d_{i} \cdot \frac{\partial d_{j} }{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}
+        + d_{i} \cdot d_{j} \cdot \frac{\partial^{2}f}{\partial z_{4}^{2}} - a_{j} \cdot \frac{\partial a_{i} }{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{1}} - a_{j} \cdot a_{i} \cdot \frac{\partial^{2}f}{\partial z_{1}^{2}}
+         - ... - d_{j} \cdot \frac{\partial d_{i}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}
+          - d_{j} \cdot d_{i} \cdot \frac{\partial^{2}f}{\partial z_{4}^{2}}.
+\end{aligned}
+\end{equation*}
+
+Несложно заметить, что в общем случае для любого слагаемого, включающего вторую производную функции $f$, имеется точно такое же слагаемое с противоположным знаком (при условии, конечно, наличие у функции $f$ равенства смешаных частных производных, то есть, при условии непрерывности $f$). Это облегчит послеующие вычисления.
+
+Для выпрямления пространства необходимо расписать таким образом коммутаторы для всех комбинаций векторных полей. Для начала рассчитаем коммутаторы между всеми векторными полями из абелевой подалгебры и теми векторными полями, что в подалгебру не вошли. Начнём с векторного поля $e_{2}$. Вначале рассмотрим коммутатор $[e_{1}, e_{2}]$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{1}, e_{2}$]$(f)
+ = \frac{\partial a_{2}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{2}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{2}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{2}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{4}}
+     + 0 \cdot \frac{\partial}{\partial z_{2}}(...)
+      + 0 \cdot \frac{\partial}{\partial z_{3}}(...)
+       + 0 \cdot \frac{\partial}{\partial z_{4}}(...)
+        = 0.
+\end{aligned}
+\end{equation*}
+
+Из данного выражения можно сделать некоторый вывод относительно векторного поля $e_{2}$. Так как функция $f$ произвольна, то мы не знаем чему равна её производная по любой составляющей вектора $z$. А это означает, что в полученном выражении сомножители производных функции $f$  должны быть равны нулю. Отсюда следует, что составляющие векторного поля $e_{2}$: $a_{2}(z)$, $b_{2}(z)$, $c_{2}(z)$ и $d_{2}(z)$ - не зависят от переменной $z_{1}$.
+
+Проведём аналогичные вычисления для коммутаторов $[e_{3}, e_{2}]$, $[e_{4}, e_{2}]$ и $[e_{6}, e_{2}]$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{3}, e_{2}$]$(f)
+ = \frac{\partial a_{2}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{2}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{2}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{2}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{4}}
+     = - \frac{\partial f}{\partial z_{1}}.
+\end{aligned}
+\end{equation*}
+
+Из этого выражения можно заметить, что $b_{2}(z)$, $c_{2}(z)$ и $d_{2}(z)$ не зависят от переменной $z_{2}$, а относительно $a_{2}(z)$ справедливо будет сказать $\frac{\partial a_{2}(z)}{\partial z_{2}}=-1$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{4}, e_{2}$]$(f)
+ = \frac{\partial a_{2}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{2}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{2}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{2}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Отсюда следует, что $a_{2}(z)$, $b_{2}(z)$, $c_{2}(z)$ и $d_{2}(z)$ не зависят от переменной $z_{3}$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{6}, e_{2}$]$(f)
+ = \frac{\partial a_{2}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{2}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{2}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{2}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Это означает, что $a_{2}(z)$, $b_{2}(z)$, $c_{2}(z)$ и $d_{2}(z)$ не зависят от переменной $z_{4}$.
+
+Таким образом, на данном этапе решения задачи (в предположении рассматриваемого варианта выпрямления пространства) мы можем сказать о векторном поле $e_{2}$ следующее:
+
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{2}=\{ -z_{2} + A_{2}
+ ; B_{2}
+  ; C_{2}
+   ; D_{2}\} }, A_{2}, B_{2}, C_{2}, D_{2} = Const
+\end{gathered}
+\end{equation*}
+
+
+\line(1,0){540}%_____________________________________________________
+
+Теперь рассчитаем подобные коммутаторы для $e_{5}$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{1}, e_{5}$]$(f)
+ = \frac{\partial a_{5}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{5}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{5}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{5}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 2 \cdot \frac{\partial f}{\partial z_{1}}.
+\end{aligned}
+\end{equation*}
+
+Отсюда следует, что $b_{5}$, $c_{5}$ и $d_{5}$ не зависят от $z_{1}$, а для $a_{5}$ справедливо сказать, что $\frac{\partial a_{5}(z)}{\partial z_{1}}=2$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{3}, e_{5}$]$(f)
+ = \frac{\partial a_{5}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{5}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{5}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{5}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{4}}
+     = \frac{\partial f}{\partial z_{2}}.
+\end{aligned}
+\end{equation*}
+
+Это означает, что $a_{5}$, $c_{5}$ и $d_{5}$ не зависят от $z_{2}$, а для $b_{5}$ справедливо сказать, что $\frac{\partial b_{5}(z)}{\partial z_{2}}=1$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{4}, e_{5}$]$(f)
+ = \frac{\partial a_{5}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{5}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{5}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{5}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{4}}
+     = \beta \cdot \frac{\partial f}{\partial z_{3}}.
+\end{aligned}
+\end{equation*}
+
+Отсюда можно заключить, что $a_{5}$, $b_{5}$ и $d_{5}$ не зависят от $z_{3}$, а для $c_{5}$ справедливо сказать, что $\frac{\partial c_{5}(z)}{\partial z_{3}}=\beta$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{6}, e_{5}$]$(f)
+ = \frac{\partial a_{5}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{5}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{5}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{5}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Следовательно, $a_{5}$, $b_{5}$, $c_{5}$ и $d_{5}$ не зависят от $z_{4}$.
+
+Теперь, на основании приведённых выкладок, мы можем сказать про $e_{5}$ следующее:
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{5}=\{ 2 \cdot z_{1} + A_{5}
+ ; z_{2} + B_{5}
+  ; \beta \cdot z_{3} + C_{5}
+   ; D_{5})\} }, A_{5}, B_{5}, C_{5}, D_{5} = Const
+\end{gathered}
+\end{equation*}
+
+\line(1,0){540} %_____________________________________________________
+
+Осталось ещё одно векторное поле $e_{7}$. Проведём вычисления для него:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{1}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{1}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Значит, $a_{7}$, $b_{7}$, $c_{7}$ и $d_{7}$ не зависят от $z_{1}$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{3}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{2}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Это означает, что $a_{7}$, $b_{7}$, $c_{7}$ и $d_{7}$ не зависят от $z_{2}$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{4}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{4}}
+     = 0.
+\end{aligned}
+\end{equation*}
+
+Следовательно, $a_{7}$, $b_{7}$, $c_{7}$ и $d_{7}$ не зависят от $z_{3}$.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{6}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}
+     =  \frac{\partial f}{\partial z_{4}}.
+\end{aligned}
+\end{equation*}
+
+Отсюда можно заключить, что $a_{7}$, $b_{7}$ и $с_{7}$ не зависят от $z_{4}$, а для $d_{7}$ справедливо сказать, что $\frac{\partial d_{7}(z)}{\partial z_{4}}=1$.
+
+На основании этих выкладок, про векторное поле $e_{7}$ мы можем сказать следующее:
+
+\begin{equation*}
+\begin{gathered}
+\fbox{e_{7}=\{ A_{7}; B_{7}; C_{7}; z_{4} + D_{7}\}}, A_{7}, B_{7}, C_{7}, D_{7} = Const
+\end{gathered}
+\end{equation*}
+
+
+\line(1,0){540}%_____________________________________________________
+
+Оставшиеся коммутаторы данного варианта подразделяются на две группы: комбинации, включающие оба поля из абелевой подалгебры, и комбинации, включающие оба поля, в абелевой подалгебре не участвующие. Что касается первого случая, он практически тривиален, и выливается в заключения вида $\frac{\partial^{2} f}{\partial z_{i}\partial z_{j}}-\frac{\partial^{2} f}{\partial z_{j}\partial z_{i}} = 0$. Оставшиеся три коммутатора представляют интерес, и именно от них зависит, может ли такое пространство вообще существовать.
+
+Раскроем коммутатор $[e_{2}, e_{5}]$:
+\begin{equation*}
+\begin{gathered}
+$[$e_{2}, e_{5}$]$(f) = e_{2}(e_{5})(f) - e_{5}(e_{2})(f) =
+\\ = (-z_{2} + A_{2}) \cdot (2 \cdot \underbrace{\frac{\partial z_{1}}{\partial z_{1}}}_{1} \cdot \frac{\partial f}{\partial z_{1}}
+ + \underbrace{\frac{\partial A_{5}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+  + \underbrace{\frac{\partial z_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+   + \underbrace{\frac{\partial B_{5}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+    + \beta \cdot \underbrace{\frac{\partial z_{3}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+     + \underbrace{\frac{\partial C_{5}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+      + \underbrace{\frac{\partial D_{5}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{4}}) +
+ \\ + B_{2} \cdot (\underbrace{\frac{\partial z_{2}}{\partial z_{2}}}_{1} \cdot \frac{\partial f}{\partial z_{2}})
+  + C_{2} \cdot (\beta \cdot \underbrace{\frac{\partial z_{3}}{\partial z_{3}}}_{1} \cdot \frac{\partial f}{\partial z_{3}}) + D_{2} \cdot 0 -
+ \\ - (2 \cdot z_{1} + A_{5}) \cdot (\underbrace{-\frac{\partial z_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+  + \underbrace{\frac{\partial A_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+   + \underbrace{\frac{\partial B_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+    + \underbrace{\frac{\partial C_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+     + \underbrace{\frac{\partial D_{2}}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{4}}) - (z_{2} + B_{5}) \cdot (-\underbrace{\frac{\partial z_{2}}{\partial z_{2}}}_{1} \cdot \frac{\partial f}{\partial z_{1}}) -
+\\ - (\beta \cdot z_{3} + C_{5}) \cdot (0) - D_{5} \cdot (0)
+ = -2 \cdot z_{2} \cdot \frac{\partial f}{\partial z_{1}}
+  + 2 \cdot A_{2} \cdot \frac{\partial f}{\partial z_{1}}
+   + B_{2} \cdot \frac{\partial f}{\partial z_{2}}
+    + \beta \cdot  C_{2} \cdot \frac{\partial f}{\partial z_{3}}
+     + z_{2} \cdot \frac{\partial f}{\partial z_{1}}
+      + B_{5} \cdot \frac{\partial f}{\partial z_{1}}.
+\end{gathered}
+\end{equation*}
+
+Получим равенство:
+
+\begin{equation*}
+\begin{gathered}
+$[$e_{2}, e_{5}$]$(f) =
+ (-z_{2} + 2 \cdot A_{2} + B_{5}) \cdot \frac{\partial f}{\partial z_{1}} + B_{2} \cdot \frac{\partial f}{\partial z_{2}} + \beta \cdot C_{2} \cdot \frac{\partial f}{\partial z_{3}} =
+ \\ = (-z_{2} + A_{2}) \cdot \frac{\partial f}{\partial z_{1}} + (B_{2} + 1) \cdot \frac{\partial f}{\partial z_{2}} + C_{2} \cdot \frac{\partial f}{\partial z_{3}}+D_{2} \cdot \frac{\partial f}{\partial z_{4}} = e_{2}(f) + e_{3}(f).
+\end{gathered}
+\end{equation*}
+
+Проанализировав его, получим ограничение вида: $A_{2}=-B_{5}$, $D_{2}=0$,  $C_{2} \cdot \beta = C_{2}$, откуда $\beta = 1$. Это выполняемо, однако условие $B_{2}=B_{2}+1$ не может быть выполнено ни коим образом. Из этого следует, что для данного вида абелевой подалгебры наша алгебра не имеет реализации. Проверим оставшиеся два варианта.
+
+\newpage
+\subsection*{Вариант 2}
+
+При рассмотрении этого варианта абелева подалгебра имеет вид:
+\begin{flushleft}
+\begin{tabular}{c}
+$e_{1}=\{1,0,0,0\};$ \\
+$e_{3}=\{0,1,0,0\};$ \\
+$e_{4}=\{0,0,1,0\};$ \\
+$e_{6}=\{a_{6}(z_{4}), b_{6}(z_{4}), c_{6}(z_{4}),0\};$ \\
+\end{tabular}
+\end{flushleft}
+
+Нужно провести аналогичные расчёты коммутаторов для оставшихся векторов. Имеется приятное обстоятельство: первые три вектора абелвой подалгебры имеют такой же вид, как и в прошлом варианте выпрямления. Это значит, что будут справедливы следующие выражения:
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{2}=\{ -z_{2} + a_{2}(z_{4}) + A_{2} ; b_{2}(z_{4}) + B_{2} ; c_{2}(z_{4}) + C_{2} ; d_{2}(z_{4}) + D_{2} \} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{5}=\{ 2 \cdot z_{1} + a_{5}(z_{4}) + A_{5} ; z_{2} + b_{5}(z_{4}) +  B_{5} ; \beta \cdot z_{3} + c_{5}(z_{4}) +  C_{5} ;  d_{5}(z_{4}) + D_{5}\} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{e_{7}=\{ a_{7}(z_{4}) + A_{7} ; b_{7}(z_{4}) + B_{7} ; c_{7}(z_{4}) + C_{7} ; d_{7}(z_{4}) + D_{7}\}}
+\end{gathered}
+\end{equation*}
+
+Как и раньше заглавные литеры с индексом вектоного поля обозначают константы интегрирования.
+
+Пересчитаем тройку коммутаторов, связанных с векторным полем $e_{6}$:
+
+\begin{equation*}
+\begin{gathered}
+$[$e_{2}, e_{6}$]$(f) = e_{2}(e_{6})(f) - e_{6}(e_{2})(f) =
+ \\ = (-z_{2} + a_{2}(z_{4}) + A_{2}) \cdot ( \underbrace{\frac{\partial a_{6}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+  + \underbrace{\frac{\partial b_{6}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+   + \underbrace{\frac{\partial c_{6}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}) +
+
+  \\ + (b_{2}(z_{4}) + B_{2}) \cdot (\underbrace{\frac{\partial a_{6}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+   + \underbrace{\frac{\partial b_{6}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+    + \underbrace{\frac{\partial c_{6}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}) +
+
+  \\ + (c_{2}(z_{4}) + C_{2}) \cdot (\underbrace{\frac{\partial a_{6}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+   + \underbrace{\frac{\partial b_{6}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+    + \underbrace{\frac{\partial c_{6}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}) +
+
+  \\ + (d_{2}(z_{4}) + D_{2}) \cdot (\frac{\partial a_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+   + \frac{\partial b_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+    + \frac{\partial c_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}) -
+
+  \\ - a_{6}(z_{4}) \cdot (\underbrace{\frac{\partial a_{2}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+   + \underbrace{\frac{\partial (-z_{2})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+    + \underbrace{\frac{\partial b_{2}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+    + \underbrace{\frac{\partial c_{2}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+     + \underbrace{\frac{\partial d_{2}(z_{4})}{\partial z_{1}}}_{0} \cdot \frac{\partial f}{\partial z_{4}}) -
+  \\ - b_{6}(z_{4}) \cdot (\underbrace{\frac{\partial a_{2}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+   + \underbrace{\frac{\partial (-z_{2})}{\partial z_{2}}}_{1} \cdot \frac{\partial f}{\partial z_{1}}
+    + \underbrace{\frac{\partial b_{2}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+     + \underbrace{\frac{\partial c_{2}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+      + \underbrace{\frac{\partial d_{2}(z_{4})}{\partial z_{2}}}_{0} \cdot \frac{\partial f}{\partial z_{4}}) -
+  \\ - c_{6}(z_{4}) \cdot (\underbrace{\frac{\partial a_{2}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+    + \underbrace{\frac{\partial (-z_{2})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{1}}
+     + \underbrace{\frac{\partial b_{2}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{2}}
+      + \underbrace{\frac{\partial c_{2}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{3}}
+       + \underbrace{\frac{\partial d_{2}(z_{4})}{\partial z_{3}}}_{0} \cdot \frac{\partial f}{\partial z_{4}}) -
+  \\ - 0 \cdot (\frac{\partial a_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+   + \frac{\partial (-z_{2})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+    + \frac{\partial b_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+     + \frac{\partial c_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+     + \frac{\partial d_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}})
+     \\ = \frac{\partial f}{\partial z_{1}} \cdot (b_{6}(z_{4}) + d_{2}(z_{4}) \cdot \frac{\partial a_{6}(z_{4})}{\partial z_{4}} + D_{2} \cdot \frac{\partial a_{6}(z_{4})}{\partial z_{4}})
+      + \frac{\partial f}{\partial z_{2}} \cdot (d_{2}(z_{4}) \cdot \frac{\partial b_{6}(z_{4})}{\partial z_{4}} + D_{2} \cdot \frac{\partial b_{6}(z_{4})}{\partial z_{4}}) +
+      \\ + \frac{\partial f}{\partial z_{3}} \cdot (d_{2}(z_{4}) \cdot \frac{\partial c_{6}(z_{4})}{\partial z_{4}} + D_{2} \cdot \frac{\partial c_{6}(z_{4})}{\partial z_{4}}) = 0.
+    \end{gathered}
+\end{equation*}
+
+Значит, для векторного поля $e_{2}$ будет справедлива следующая система уравнений:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial a_{6}(z_{4})}{\partial z_{4}}\Big) = b_{6}
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial b_{6}(z_{4})}{\partial z_{4}}\Big) = 0
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial c_{6}(z_{4})}{\partial z_{4}}\Big) = 0
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+Попробуем проанализировать данную систему. При $b_{6} \neq 0$ она разрешима только с условием, что $b_{6}$ и $c_{6}$ являются константами. Ещё один способ её достижения - положение $b_{6}$ равным нулю и признание $(d_{2}+D_{2}) = 0$, то есть $d_{2}(z_{4}) = Const$. Перед тем, как рассматривать эти варианты решения, рассмотрим другие коммутаторы.
+
+Рассмотрим коммутатор $[e_{5}, e_{6}]$. Он будет выглядеть следующим образом:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{5}, e_{6}$]$(f) = e_{5}(e_{6})(f) - e_{6}(e_{5})(f) =
+ (d_{5}+D_{5}) \cdot (\frac{\partial a_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}) -
+   \\ - 2 \cdot a_{6} \cdot \frac{\partial f}{\partial z_{1}}
+    - b_{6} \cdot \frac{\partial f}{\partial z_{2}}
+     - \beta \cdot c_{6} \cdot \frac{\partial f}{\partial z_{3}}
+    = 0.
+\end{aligned}
+\end{equation*}
+
+Полученные ограничения имеют слудеющий вид:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{6}(z_{4})}{\partial z_{4}}\Big) = 2 \cdot a_{6}
+   \\
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{6}(z_{4})}{\partial z_{4}}\Big) = b_{6}
+   \\
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial c_{6}(z_{4})}{\partial z_{4}}\Big) = \beta \cdot c_{6}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+Проанализируем эту систему. При $b_{6} \neq 0$, она неразрешима, так как в этом случае $b_{6}$ должна быть константой, а её производная, соответвтвенно, должна равняться нулю, тогда левая часть второго равенства обратится в ноль, откуда $b_{6} \eq 0$, а это противоречие. Для случая $b_{6} = 0$ никакого противоречия обнаружить нельзя, так как в таком варианте система просто потеряет одно уравнение.
+
+Из двух других уравнений полученной системы, можно сделать вывод, что при $(d_{5}(z_{4})+D_{5}) = 0$, мы получим $a_{6}(z_{4}) = 0$ и $c_{6}(z_{4}) = 0$, что, в связке с уже указанным $b_{6}=0$, означало бы вырождение векторного поля $e_{6}$. Такое решение нас не устраивает, поэтому положим $(d_{5}(z_{4})+D_{5}) \neq 0$.
+
+Продолжим вычисление комммутаторов. Для $e_{7}$ будет иметь место следующее выражение:
+
+%-% Если мы проанализируем данную систему, то можем сделать вывод, что выражения $(d_{2} + D_{2})$ и $(\frac{\partial a_{6}(z_{4})}{\partial z_{4}})$ оба не равны нулю. Из этого следует, что выражения $(\frac{\partial b_{6}(z_{4})}{\partial z_{4}})$ и $(\frac{\partial c_{6}(z_{4})}{\partial z_{4}})$ нам придётся положить равными нулю. Это по сути означает сказать, что заявленные $b_{6}(z_{4})$ и $c_{6}(z_{4})$ на самом деле от $z_{4}$ не зависят. Стоит подумать, можем ли мы  предложить такой вариант как решение. Однако, забегая вперёд, можем сказать, что разрешение данной дилеммы на ход дальнейшего решения не повлияет. Рассмотрим, допустим, коммутатор $[e_{7}, e_{6}]$. Выражение для него примет следующий вид.
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{7}, e_{6}$]$(f) = e_{7}(e_{6})(f) - e_{6}(e_{7})(f) =
+ (d_{7}+D_{7}) \cdot (\frac{\partial a_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{6}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}) =
+   \\ = - a_{6} \cdot \frac{\partial f}{\partial z_{1}} - b_{6} \cdot \frac{\partial f}{\partial z_{2}} - c_{6} \cdot \frac{\partial f}{\partial z_{3}}.
+\end{aligned}
+\end{equation*}
+
+Полученные ограничения имеют слудеющий вид:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial a_{6}(z_{4})}{\partial z_{4}}\Big) = - a_{6}
+   \\
+   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial b_{6}(z_{4})}{\partial z_{4}}\Big) = - b_{6}
+   \\
+   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial c_{6}(z_{4})}{\partial z_{4}}\Big) = - c_{6}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+С условием, что $b_{6} = 0$, система потеряет второе уравнение, однако два других стоит проанализировать. Аналогично прошлому коммутатору, во избежание вырождения векторного поля $e_{6}$, нам придётся положить $(d_{7}(z_{4})+D_{7}) \neq 0$. Этим пока ограничимся, и перейдём к просчёту коммутаторов для попарных комбинаций векторных полей $e_{2}$,  $e_{5}$ и $e_{7}$.
+
+%Собственно, здесь уже прослеживается противоречие с предыдущим выводом. Выражения $(\frac{\partial b_{6}(z_{4})}{\partial z_{4}})$ и $(\frac{\partial c_{6}(z_{4})}{\partial z_{4}})$ не могут равняться нулю, следуя системе, полученной для векторного поля $e_{7}$, хотя по системе для поля $e_{2}$ они должны. Из этого мы заключаем, что такой вариант выпрямления пространства тоже невозможен для данной алгебры, аналогично первому. В таком случае нам ничего не остаётся, кроме как перейти к третьему варианту выпрямления.
+
+%Просчитаем также коммутаторы попарно для векторных полей $e_{2}$,  $e_{5}]$ и $e_{7}$.
+Для второго и седьмого полей мы будем иметь следующее выражение:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{2}, e_{7}$]$(f) = e_{2}(e_{7})(f) - e_{7}(e_{2})(f) =
+ - (b_{7}(z_{4})+B_{7}) \cdot (-\frac{\partial f}{\partial z_{1}})
+  - \\ - (d_{7}(z_{4})+D_{7}) \cdot (\frac{\partial a_{2}(z_{4})}{\partial z_{4}}
+   \cdot \frac{\partial f}{\partial z_{1}}
+    + \frac{\partial b_{2}(z_{4})}{\partial z_{4}}
+     \cdot \frac{\partial f}{\partial z_{2}}
+      + \frac{\partial c_{2}(z_{4})}{\partial z_{4}}
+       \cdot \frac{\partial f}{\partial z_{3}}) =
+   \\ = \frac{\partial f}{\partial z_{1}} \cdot (b_{7}+B_{7}
+    - (d_{7}+D_{7}) \cdot \frac{\partial a_{2}(z_{4})}{\partial z_{4}})
+    + \frac{\partial f}{\partial z_{2}} \cdot (- (d_{7}+D_{7}) \cdot \frac{\partial b_{2}(z_{4})}{\partial z_{4}})
+    + \\ + \frac{\partial f}{\partial z_{3}} \cdot (- (d_{7}+D_{7}) \cdot \frac{\partial c_{2}(z_{4})}{\partial z_{4}})
+      + \frac{\partial f}{\partial z_{4}} \cdot (0) = 0.
+\end{aligned}
+\end{equation*}
+
+Если мы соберём полученные ограничения в систему, то получим:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+ \left\{ \begin{array}{}
+  \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial a_{2}(z_{4})}{\partial z_{4}}\Big) = - b_{2} - B_{2}
+  \\
+  \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial b_{2}(z_{4})}{\partial z_{4}}\Big) = 0
+  \\
+  \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial c_{2}(z_{4})}{\partial z_{4}}\Big) = 0
+  \end{array}\right.
+  }
+\end{aligned}
+\end{equation*}
+
+Анализируя, можно сделать вывод: при  $(d_{7}(z_{4})+D_{7}) \neq 0$ - определённое ранее условие невырождения векторного поля $e_{6}$ - $b_{2}(z_{4})$ и $c_{2}(z_{4})$ обязаны быть константам, для удовлетворения второму и третьему уравнениям системы.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Если же мы рассчитаем коммутатор между вторым и пятым векторными полями, то получим:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{2}, e_{5}$]$(f) = e_{2}(e_{5})(f) - e_{5}(e_{2})(f) =
+ (-z_{2}+a_{2}(z_{4})+A_{2}) \cdot 2 \cdot \frac{\partial f}{\partial z_{1}}
+  + (b_{2}(z_{4})+B_{2}) \cdot \frac{\partial f}{\partial z_{2}} +
+   \\ + (c_{2}(z_{4})+C_{2}) \cdot \beta \cdot \frac{\partial f}{\partial z_{3}}
+    + (\underbrace{d_{2}(z_{4})+D_{2}}_{0}) \cdot (...)
+  - (z_{2}+b_{5}(z_{4})+B_{5}) \cdot (-\frac{\partial f}{\partial z_{1}}) -
+   \\ - (d_{5}(z_{4})+D_{5}) \cdot (\frac{\partial a_{2}(z_{4})}{\partial z_{4}}
+    \cdot \frac{\partial f}{\partial z_{1}}
+     + \frac{\partial b_{2}(z_{4})}{\partial z_{4}}
+      \cdot \frac{\partial f}{\partial z_{2}}
+       + \frac{\partial c_{2}(z_{4})}{\partial z_{4}}
+        \cdot \frac{\partial f}{\partial z_{3}}
+         + \frac{\partial d_{2}(z_{4})}{\partial z_{4}}
+          \cdot \frac{\partial f}{\partial z_{4}}) =
+   \\ = \frac{\partial f}{\partial z_{1}} \cdot (-2 \cdot z_{2} + 2 \cdot a_{2} + 2 \cdot A_{2} + z_{2} + b_{5} + B_{5} - (d_{5} + D_{5}) \cdot \frac{\partial a_{2}}{\partial z_{4}}) +
+    \\ + \frac{\partial f}{\partial z_{2}} \cdot (b_{2}+B_{2} - (d_{5} + D_{5}) \cdot \frac{\partial b_{2}}{\partial z_{4}})
+     + \frac{\partial f}{\partial z_{3}} \cdot (\beta \cdot (c_{2}+C_{2}) - (d_{5} + D_{5}) \cdot \frac{\partial c_{2}}{\partial z_{4}})
+      + \frac{\partial f}{\partial z_{4}} \cdot (0) =
+   \\ = \frac{\partial f}{\partial z_{1}} \cdot (-z_{2} + a_{2} + A_{2})
+    + \frac{\partial f}{\partial z_{2}} \cdot (b_{2}+B_{2}+1)
+     + \frac{\partial f}{\partial z_{3}} \cdot (c_{2}+C_{2})
+      + \frac{\partial f}{\partial z_{4}} \cdot (\underbrace{d_{2}+D_{2}}_{0}).
+\end{aligned}
+\end{equation*}
+
+Представим это в виде системы:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+ \left\{ \begin{array}{}
+  \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{2}(z_{4})}{\partial z_{4}}\Big) = a_{2} + A_{2} + b_{5} + B_{5}
+  \\
+  \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{2}(z_{4})}{\partial z_{4}}\Big) = -1
+  \\
+  \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial c_{2}(z_{4})}{\partial z_{4}}\Big) = (c_{2}+C_{2}) \cdot (\beta - 1)
+  \end{array}\right.
+  }
+\end{aligned}
+\end{equation*}
+
+Легко заметить, что при $b_{2}(z_{4})=Const$ и $c_{2}(z_{4})=Const$ она неразрешима. Из второго уравнения получаем выражение $(d_{5}(z_{4}) + D_{5}) \cdot 0 = -1$, а это противоречие.
+
+Таким образом, мы обнаружили, что при данном варианте выпрямления для нашей алгебры не существует какой-то невырожденной реализации. Значит, второй вариант выпрямления не подходит тоже, а следовательно мы можем проверять третий вариант.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{equation*}
+% \begin{aligned}
+% $[$e_{7}, e_{5}$]$(f) = e_{7}(e_{5})(f) - e_{5}(e_{7})(f) = \\ =
+%  (a_{7}(z_{4})+A_{7}) \cdot 2 \cdot \frac{\partial f}{\partial z_{1}}
+%   + (b_{7}(z_{4})+B_{7}) \cdot \frac{\partial f}{\partial z_{2}}
+%    + (c_{7}(z_{4})+C_{7}) \cdot \beta \cdot \frac{\partial f}{\partial z_{3}}
+%     + \\ + (d_{7}(z_{4})+D_{7}) \cdot (\frac{\partial a_{5}(z_{4})}{\partial z_{4}}
+%      \cdot \frac{\partial f}{\partial z_{1}}
+%       + \frac{\partial b_{5}(z_{4})}{\partial z_{4}}
+%        \cdot \frac{\partial f}{\partial z_{2}}
+%         + \frac{\partial c_{5}(z_{4})}{\partial z_{4}}
+%          \cdot \frac{\partial f}{\partial z_{3}}
+%           + \frac{\partial d_{5}(z_{4})}{\partial z_{4}}
+%            \cdot \frac{\partial f}{\partial z_{4}})
+%   - (z_{2}+b_{5}(z_{4})+B_{5}) \cdot (-\frac{\partial f}{\partial z_{1}}) -
+%    \\ - (d_{5}(z_{4})+D_{5}) \cdot (\frac{\partial a_{7}(z_{4})}{\partial z_{4}}
+%     \cdot \frac{\partial f}{\partial z_{1}}
+%      + \frac{\partial b_{7}(z_{4})}{\partial z_{4}}
+%       \cdot \frac{\partial f}{\partial z_{2}}
+%        + \frac{\partial c_{7}(z_{4})}{\partial z_{4}}
+%         \cdot \frac{\partial f}{\partial z_{3}}
+%          + \frac{\partial d_{7}(z_{4})}{\partial z_{4}}
+%           \cdot \frac{\partial f}{\partial z_{4}}) =
+%    \\ = \frac{\partial f}{\partial z_{1}} \cdot (2 \cdot a_{7} + 2 \cdot A_{7} + (d_{7} + D_{7}) \cdot \frac{\partial a_{5}}{\partial z_{4}} - (d_{5} + D_{5}) \cdot \frac{\partial a_{7}}{\partial z_{4}}) +
+%     \\ + \frac{\partial f}{\partial z_{2}} \cdot (b_{7}+B_{7} + (d_{7} + D_{7}) \cdot \frac{\partial b_{5}}{\partial z_{4}} - (d_{5} + D_{5}) \cdot \frac{\partial b_{7}}{\partial z_{4}})
+%      + \\ + \frac{\partial f}{\partial z_{3}} \cdot (\beta \cdot (c_{7}+C_{7}) + (d_{7} + D_{7}) \cdot \frac{\partial c_{5}}{\partial z_{4}} - (d_{5} + D_{5}) \cdot \frac{\partial c_{7}}{\partial z_{4}})
+%       + \\ + \frac{\partial f}{\partial z_{4}} \cdot ((d_{7} + D_{7}) \cdot \frac{\partial d_{5}}{\partial z_{4}} - (d_{5} + D_{5}) \cdot \frac{\partial d_{7}}{\partial z_{4}}) = 0.
+% \end{aligned}
+% \end{equation*}
+
+
+% \begin{equation*}
+% \begin{aligned}
+% \fbox{
+%  \left\{ \begin{array}{}
+%   2 \cdot (a_{7}+A_{7}) + \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial a_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{7}}{\partial z_{4}}\Big)
+%   \\
+%   b_{7}+B_{7}+\Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial b_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{7}}{\partial z_{4}}\Big)
+%   \\
+%   \beta \cdot (c_{7}+C_{7}) + \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial c_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial c_{7}}{\partial z_{4}}\Big)
+%   \\
+%   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial d_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial d_{7}}{\partial z_{4}}\Big)
+%   \end{array}\right.
+%   }
+% \end{aligned}}
+% \end{equation*}
+
+
+\newpage
+\subsection*{Вариант 3}
+
+При рассмотрении этого варианта абелева подалгебра имеет вид:
+\begin{flushleft}
+\begin{tabular}{c}
+$e_{1}=\{1,0,0,0\};$ \\
+$e_{3}=\{0,1,0,0\};$ \\
+$e_{4}=\{a_{4}(z_{4}), b_{4}(z_{4}), 0 ,0\};$  \\
+$e_{6}=\{0,0,1,0\};$ \\
+\end{tabular}
+\end{flushleft}
+
+Несложно заметить, что поиск решения во многом будет схож со вторым вариантом. Результаты по первым двум векторам абелевой подалгебры будут такими же, а для $e_{6}$, имеющего теперь бывший вид $e_{4}$, расчёты не составят особенной сложности. Коммутаторы $e_{6}$ с $e_{2}$ и $e_{5}$ скажут нам только то, что ни одна из составляющих этих векторных полей не будет зависеть от переменной $z_{3}$. Интерес же для выражения формулой из этой тройки коммутаторов будет представлять единственно коммутатор $[e_{7}, e_{6}]$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{6}, e_{7}$]$(f)
+ = \frac{\partial a_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \frac{\partial d_{7}(z)}{\partial z_{3}} \cdot \frac{\partial f}{\partial z_{4}}
+     = \frac{\partial f}{\partial z_{3}}.
+\end{aligned}
+\end{equation*}
+
+Видно, что составляющие выкторного поля $e_{7}$ : $a_{7}$, $b_{7}$ и $d_{7}$ - не имеют зависимости от переменной $z_{3}$, а $c_{7}$ будет содержать слагаемое $z_{3}$ в числе прочих. Таким образом, до расчёта коммутаторов, связанных с векторным полем $e_{4}$ для искомых векторных полей мы можем сказать следующее:
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{2}=\{ -z_{2} + a_{2}(z_{4}) + A_{2} ; b_{2}(z_{4}) + B_{2} ; c_{2}(z_{4}) + C_{2} ; d_{2}(z_{4}) + D_{2} \} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{ e_{5}=\{ 2 \cdot z_{1} + a_{5}(z_{4}) + A_{5} ; z_{2} + b_{5}(z_{4}) +  B_{5} ; c_{5}(z_{4}) +  C_{5} ;  d_{5}(z_{4}) + D_{5}\} }
+\end{gathered}
+\end{equation*}
+
+\begin{equation*}
+\begin{gathered}
+\fbox{e_{7}=\{ a_{7}(z_{4}) + A_{7} ; b_{7}(z_{4}) + B_{7} ;  z_{3} + c_{7}(z_{4}) + C_{7} ; d_{7}(z_{4}) + D_{7}\}}
+\end{gathered}
+\end{equation*}
+
+Рассчитаем тройку коммутаторов для векторного поля $e_{4}$. Очень во многом они будут схожи со вторым вариантом. К примеру, коммутатор $[e_{2}, e_{4}]$, по таблице равный нулю, будет выглядеть так:
+
+\begin{equation*}
+\begin{gathered}
+$[$e_{2}, e_{4}$]$(f) = e_{2}(e_{4})(f) - e_{4}(e_{2})(f) =
+
+ \\ (d_{2}(z_{4}) + D_{2}) \cdot (\frac{\partial a_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+   + \frac{\partial b_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}})
+  - b_{4}(z_{4})  \cdot \frac{\partial f}{\partial z_{1}} = 0.
+    \end{gathered}
+\end{equation*}
+
+Остсюда следует, что для векторного поля $e_{2}$ справедливо будет записать следующую систему уравнений:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial a_{4}}{\partial z_{4}}\Big) = b_{4}
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial b_{4}}{\partial z_{4}}\Big) = 0
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+Попытаемся проанализировать её. Рассмотреть два случая: $b_{4} = 0$ и $b_{4} \neq 0$. В первом случае данная система разрешима при дополнительном условии $(d_{2} + D_{2}) = 0$. Во втором же случае для соблюдение условий потребовало бы от $b_{4}$ равенства некоторой константе:
+
+%Как мы видим, она отличается от уже виденной нами только индексами. Из неё мы так же можем сделать вывод, что такое условие выполнимо только в том случае, если $b_{4}$ и $c_{4}$ имеют константные значения. Обратимся к коммутатору $[e_{7}, e_{4}]$, памятуя, что, вообще говоря, во втором варианте его результат показал нереализуемость выбранной алгебры Ли.
+
+Рассмотрим аналогичный коммутатор для $e_{7}$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{7}, e_{4}$]$(f) = e_{7}(e_{4})(f) - e_{4}(e_{7})(f) =
+ (d_{7}+D_{7}) \cdot (\frac{\partial a_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}})
+   = 0.
+\end{aligned}
+\end{equation*}
+
+Система, описывающая полученные условия, будет выглядеть так:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial a_{4}}{\partial z_{4}}\Big) = 0
+   \\
+   \Big(d_{7} + D_{7}\Big) \cdot \Big(\frac{\partial b_{4}}{\partial z_{4}}\Big) = 0
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+Для того, чтобы такая система была разрешиа нужно потребовать либо $(d_{7} + D_{7}) = 0$, либо $a_{4} = Const$ и $b_{4} = Const$.
+
+Рассчитаем аналогичный коммутатор для $e_{5}$:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{5}, e_{4}$]$(f) = e_{5}(e_{4})(f) - e_{4}(e_{5})(f) =
+ (d_{5}+D_{5}) \cdot (\frac{\partial a_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{4}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}})
+   - a_{4}(z_{4}) \cdot 2 \cdot \frac{\partial f}{\partial z_{1}}
+    - b_{4}(z_{4}) \cdot \frac{\partial f}{\partial z_{2}}
+   = \\ = - \beta \cdot (a_{4}(z_{4}) \cdot \frac{\partial f}{\partial z_{1}} + b_{4}(z_{4}) \cdot \frac{\partial f}{\partial z_{2}}).
+\end{aligned}
+\end{equation*}
+
+Система, описывающая полученные условия, будет выглядеть так:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{4}}{\partial z_{4}}\Big) = (- \beta + 2) \cdot a_{4}
+   \\
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{4}}{\partial z_{4}}\Big) = (- \beta + 1)  \cdot b_{4}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+На основании этой системы мы можем отвергнуть вариант, когда $a_{4} = Const$ и $b_{4} = Const$: в таких условиях (если $a_{4}$ и $b_{4}$ не равны нулю, что означало бы вырождение) мы бы пришли к условиям $(- \beta + 2) \cdot Const = 0$ и $(- \beta + 1) \cdot Const = 0$, а это бы значило, что мы накладываем ограничения на параметр $\beta$, а даже если бы такое было возможно, условия эти неосуществимы. Следовательно, мы устанавливаем, что $(d_{7} + D_{7}) = 0$. Также мы можем отметить, что $(d_{5} + D_{5}) \neq 0$, так как иначе мы получили бы вырождение векторного поля $e_{4}$. Насчёт остального пока думаем.
+
+Рассмотрим парные коммутаторы для $e_{2}$, $e_{5}$ и $e_{7}$. Для второго и седьмого векторных полей получим:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{2}, e_{7}$]$(f) = e_{2}(e_{7})(f) - e_{7}(e_{2})(f) =
+ (c_{2}+C_{2}) \cdot \frac{\partial f}{\partial z_{3}} +
+ \\ + (d_{2}+D_{2}) \cdot (\frac{\partial a_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+    + \underbrace{\frac{\partial d_{7}(z_{4})}{\partial z_{4}}}_{0} \cdot \frac{\partial f}{\partial z_{4}})
+   - \\ - (b_{7}+B_{7}) \cdot (-1) \cdot \frac{\partial f}{\partial z_{1}}
+    - \underbrace{(d_{7}+D_{7})}_{0} \cdot
+     (\frac{\partial a_{2}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+      + \frac{\partial b_{2}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+       + \frac{\partial c_{2}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+        + \frac{\partial d_{2}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}}) = 0.
+\end{aligned}
+\end{equation*}
+
+В виде системы это будет выглядеть так:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial a_{7}}{\partial z_{4}}\Big) = - b_{7} - B_{7}
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial b_{7}}{\partial z_{4}}\Big) = 0
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial c_{7}}{\partial z_{4}}\Big) = - c_{7} - C_{7}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+Векторных полей $e_{5}$ и $e_{7}$ будут иметь вид:
+
+\begin{equation*}
+\begin{aligned}
+$[$e_{5}, e_{7}$]$(f) = e_{5}(e_{7})(f) - e_{7}(e_{5})(f) =
+ (c_{5}+C_{5}) \cdot \frac{\partial f}{\partial z_{3}} +
+ \\ + (d_{5}+D_{5}) \cdot (\frac{\partial a_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+  + \frac{\partial b_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+   + \frac{\partial c_{7}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}})
+   - \\ - (a_{7}+A_{7}) \cdot 2 \cdot \frac{\partial f}{\partial z_{1}} - (b_{7}+B_{7}) \cdot \frac{\partial f}{\partial z_{2}}
+    - \underbrace{(d_{7}+D_{7})}_{0} \cdot
+     (...) = 0.
+\end{aligned}
+\end{equation*}
+
+В виде системы это будет выглядеть так:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{7}}{\partial z_{4}}\Big) = 2 \cdot (a_{7} + A_{7})
+   \\
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{7}}{\partial z_{4}}\Big) = b_{7} + B_{7}
+   \\
+   \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial c_{7}}{\partial z_{4}}\Big) = - c_{5} - C_{5}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+А если мы будем считать коммутатор для второго и пятого векторов, то получим:
+\begin{equation*}
+\begin{aligned}
+$[$e_{2}, e_{5}$]$(f) = e_{2}(e_{5})(f) - e_{5}(e_{2})(f) = \\ =
+   (- z_{2} + a_{2}+A_{2}) \cdot 2 \cdot \frac{\partial f}{\partial z_{1}} + (b_{2}+B_{2}) \cdot \frac{\partial f}{\partial z_{2}}
+    + \\ + (d_{2}+D_{2}) \cdot
+     (\frac{\partial a_{5}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+      + \frac{\partial b_{5}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+       + \frac{\partial c_{5}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+        + \frac{\partial d_{5}}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}})
+        - \\ - (z_{2} + b_{5} + B_{5}) \cdot \frac{\partial f}{\partial z_{1}}
+         - (d_{5}+D_{5}) \cdot (\frac{\partial a_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{1}}
+         + \frac{\partial b_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{2}}
+          + \frac{\partial c_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{3}}
+           + \frac{\partial d_{2}(z_{4})}{\partial z_{4}} \cdot \frac{\partial f}{\partial z_{4}})
+         = \\ = \frac{\partial f}{\partial z_{1}} \cdot (-z_{2}+a_{2}+A_{2}) + \frac{\partial f}{\partial z_{2}} \cdot (b_{2}+B_{2}+1) + \frac{\partial f}{\partial z_{3}} \cdot (c_{2}+C_{2}) + \frac{\partial f}{\partial z_{4}} \cdot (d_{2}+D_{2}).
+\end{aligned}
+\end{equation*}
+
+В виде системы это будет выглядеть так:
+
+\begin{equation*}
+\begin{aligned}
+\fbox{
+  \left\{ \begin{array}{}
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial a_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial a_{2}}{\partial z_{4}}\Big) - b_{5} - B_{5} - a_{2} - A_{2}
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial b_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial b_{2}}{\partial z_{4}}\Big) + 1
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial c_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial c_{2}}{\partial z_{4}}\Big) + c_{2} + C_{2}
+   \\
+   \Big(d_{2} + D_{2}\Big) \cdot \Big(\frac{\partial d_{5}}{\partial z_{4}}\Big) = \Big(d_{5} + D_{5}\Big) \cdot \Big(\frac{\partial d_{2}}{\partial z_{4}}\Big) + d_{2} + D_{2}
+   \end{array}\right.
+   }
+\end{aligned}
+\end{equation*}
+
+%Из полученной системы, к сожалению, аналогичным образом следует противоречие. Мы можем заметить, что третье уравнение системы предполагает невозможность равенства частной производной $c_{4}$ по переменной $z_{4}$ нулю, хотя предыдущий вывод состоял в том, что такое равенство должно сбыться. Из этого мы устанавливаем, что условия третьего варианта выпрямления пространства невыполнимы в рамках рассматриваемой алгебры, равно как и обоих вариантов, рассмотренных прежде. Всё это приводит нас к заключению о том, что алгебра Ли с опреицией коммутации, определяемой в условии, не имеет реализации, то есть не может существовать. Вследствие этого данная алгебра не может быть проинтегрорована, а ответ на задачу нахождения её интегральной поверхности будет звучать так:
+
+%\begin{center}
+%"Искомой поверхности не существует".
+%\end{center}
+
+\end{document}
