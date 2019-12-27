@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  27 DEC 2019 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  27 DEC 2019 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,32 +413,32 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `abel_intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+ftm on input line 27.
-LaTeX Font Info:    No file OT1ftm.fd. on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Trying to load font information for OT1+ftm on input line 21.
+LaTeX Font Info:    No file OT1ftm.fd. on input line 21.
 
 
 LaTeX Font Warning: Font shape `OT1/ftm/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 27.
+(Font)              using `OT1/cmr/m/n' instead on input line 21.
 
-LaTeX Font Info:    Trying to load font information for T2A+ftm on input line 27.
-LaTeX Font Info:    No file T2Aftm.fd. on input line 27.
+LaTeX Font Info:    Trying to load font information for T2A+ftm on input line 21.
+LaTeX Font Info:    No file T2Aftm.fd. on input line 21.
 
 LaTeX Font Warning: Font shape `T2A/ftm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 27.
+(Font)              using `T2A/cmr/m/n' instead on input line 21.
 
 (d:/progs/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -495,52 +495,52 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 LaTeX Font Warning: Font shape `T2A/ftm/bx/n' undefined
-(Font)              using `T2A/ftm/m/n' instead on input line 35.
+(Font)              using `T2A/ftm/m/n' instead on input line 29.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
  []
 
@@ -551,24 +551,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--73
 \openout3 = `abel_intro.toc'.
 
  [2]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 92.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 84.
  (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (31.50705pt too wide) in paragraph at lines 101--108
+Overfull \hbox (31.50705pt too wide) in paragraph at lines 93--100
  [] 
  []
 
 
-Overfull \hbox (3.54825pt too wide) in paragraph at lines 115--116
+Overfull \hbox (3.54825pt too wide) in paragraph at lines 107--108
 []\T2A/ftm/bx/n/14.4 Мы рас-смат-ри-ва-ем век-тор-ные по-ля в че-ты-рјх-мер-ном ком-плекс-ном про-стран-
  []
 
 [3] [4] [5] [6]
-./abel_intro.tex:230: Missing } inserted.
+./abel_intro.tex:222: Missing } inserted.
 <inserted text> 
                 }
-l.230         $
+l.222         $
                [$e_{2}, e_{5}$]$(f) = -2z_{1} \cdot \frac{\partial f}{\parti...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -576,34 +576,34 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abel_intro.tex:232: Incomplete \ifodd; all text was ignored after line 232.
+./abel_intro.tex:224: Incomplete \ifodd; all text was ignored after line 224.
 <inserted text> 
                 \fi 
-l.232         = \\ 
+l.224         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 A forbidden control sequence occurred in skipped text.
 This kind of error happens when you say `\if...' and forget
 the matching `\fi'. I've inserted a `\fi'; this might work.
 
-./abel_intro.tex:232: Missing $ inserted.
+./abel_intro.tex:224: Missing $ inserted.
 <inserted text> 
                 $
-l.232         = \\ 
+l.224         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abel_intro.tex:232: Extra \fi.
+./abel_intro.tex:224: Extra \fi.
 \math@cr@@@ ...ef \next@ {&\kern -\alignsep@ }\fi 
                                                   \next@ \cr 
-l.232         = \\ 
+l.224         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I'm ignoring this; it doesn't match any \if.
 
-./abel_intro.tex:232: Undefined control sequence.
+./abel_intro.tex:224: Undefined control sequence.
 \math@cr@@@ ...t@ {&\kern -\alignsep@ }\fi \next@ 
                                                   \cr 
-l.232         = \\ 
+l.224         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -611,20 +611,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./abel_intro.tex:232: Missing { inserted.
+./abel_intro.tex:224: Missing { inserted.
 <inserted text> 
                 {
-l.232         = \\ 
+l.224         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 [7]
-./abel_intro.tex:260: Missing } inserted.
+./abel_intro.tex:252: Missing } inserted.
 <inserted text> 
                 }
-l.260          $
+l.252          $
                 [$e_{2}, e_{5}$]$(f) = -2z_{1} \cdot \frac{\partial f}{\part...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -632,34 +632,34 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abel_intro.tex:262: Incomplete \ifodd; all text was ignored after line 262.
+./abel_intro.tex:254: Incomplete \ifodd; all text was ignored after line 254.
 <inserted text> 
                 \fi 
-l.262          = \\ 
+l.254          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 A forbidden control sequence occurred in skipped text.
 This kind of error happens when you say `\if...' and forget
 the matching `\fi'. I've inserted a `\fi'; this might work.
 
-./abel_intro.tex:262: Missing $ inserted.
+./abel_intro.tex:254: Missing $ inserted.
 <inserted text> 
                 $
-l.262          = \\ 
+l.254          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abel_intro.tex:262: Extra \fi.
+./abel_intro.tex:254: Extra \fi.
 \math@cr@@@ ...ef \next@ {&\kern -\alignsep@ }\fi 
                                                   \next@ \cr 
-l.262          = \\ 
+l.254          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I'm ignoring this; it doesn't match any \if.
 
-./abel_intro.tex:262: Undefined control sequence.
+./abel_intro.tex:254: Undefined control sequence.
 \math@cr@@@ ...t@ {&\kern -\alignsep@ }\fi \next@ 
                                                   \cr 
-l.262          = \\ 
+l.254          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -667,10 +667,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./abel_intro.tex:262: Missing { inserted.
+./abel_intro.tex:254: Missing { inserted.
 <inserted text> 
                 {
-l.262          = \\ 
+l.254          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -678,23 +678,23 @@ Try to go on, since this might almost work.
 
 [8]
 
-LaTeX Warning: Command \CYRS invalid in math mode on input line 275.
+LaTeX Warning: Command \CYRS invalid in math mode on input line 267.
 
 Missing character: There is no С in font cmr12!
 
-./abel_intro.tex:299: Package array Error: Empty preamble: `l' used.
+./abel_intro.tex:291: Package array Error: Empty preamble: `l' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.299   \left \{ \begin{array}{}
+l.291   \left \{ \begin{array}{}
                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [9]
-Overfull \hbox (26.75981pt too wide) detected at line 322
+Overfull \hbox (26.75981pt too wide) detected at line 314
 \OML/cmm/m/it/14.4 Re[]e[]\OT1/ftm/m/n/14.4 (^^H)[] = \OML/cmm/m/it/14.4 Re[]\OT1/ftm/m/n/14.4 (\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A \OML/cmm/m/it/14.4 y[]\OT1/ftm/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ^^A [] ^^A \OT1/ftm/m/n/14.4 ([] +\OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/ftm/m/n/14.4 ) + [] \OMS/cmsy/m/n/14.4 ^^A \OT1/ftm/m/n/14.4 ([] + \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/ftm/m/n/14.4 )[] = \OMS/cmsy/m/n/14.4 ^^@[] ^^A \OML/cmm/m/it/14.4 y[] \OT1/ftm/m/n/14.4 + [] \OMS/cmsy/m/n/14.4 ^^A [] \OT1/ftm/m/n/14.4 = 0
  []
 
@@ -704,16 +704,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4401 strings out of 492164
- 56618 string characters out of 6126244
- 139653 words of memory out of 5000000
- 8682 multiletter control sequences out of 15000+600000
+ 4399 strings out of 492164
+ 56590 string characters out of 6126244
+ 139649 words of memory out of 5000000
+ 8680 multiletter control sequences out of 15000+600000
  10965 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,11n,45p,1481b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,11n,45p,1541b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/progs/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/progs/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on abel_intro.pdf (11 pages, 183522 bytes).
+Output written on abel_intro.pdf (11 pages, 183079 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

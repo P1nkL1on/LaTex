@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: abel_intro.aux
 The style file: utf8gost705u.bst
 Database file #1: biblio.bib
-You've used 2 entries,
+You've used 1 entry,
             2958 wiz_defined-function locations,
-            681 strings with 5579 characters,
-and the built_in function-call counts, 575 in all, are:
-= -- 81
-> -- 14
-< -- 2
-+ -- 5
-- -- 3
-* -- 18
-:= -- 68
-add.period$ -- 8
-call.type$ -- 2
+            674 strings with 5296 characters,
+and the built_in function-call counts, 292 in all, are:
+= -- 38
+> -- 5
+< -- 1
++ -- 2
+- -- 1
+* -- 9
+:= -- 39
+add.period$ -- 4
+call.type$ -- 1
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 26
-empty$ -- 65
-format.name$ -- 3
-if$ -- 157
+cite$ -- 1
+duplicate$ -- 13
+empty$ -- 33
+format.name$ -- 1
+if$ -- 75
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 22
-num.names$ -- 6
-pop$ -- 18
+newline$ -- 16
+num.names$ -- 3
+pop$ -- 9
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 10
+skip$ -- 3
 stack$ -- 0
 substring$ -- 0
-swap$ -- 14
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 3
-write$ -- 43
+while$ -- 1
+width$ -- 2
+write$ -- 26
