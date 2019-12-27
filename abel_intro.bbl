@@ -13,4 +13,20 @@
 \newblock М.: Наука, 1977.
 \newblock 496~{с.}
 
+\bibitem{Loboda}
+\selectlanguageifdefined{russian}
+Лобода~А.~В. Об одном семействе алгебр Ли,
+  связанных с однородными поверхностями~//
+  Труды Математического института им. В. А.
+  Стрелкова.
+\newblock Т. 253.
+\newblock {С.}~111--126.
+
+\bibitem{Shewalie}
+\selectlanguageifdefined{russian}
+Шевалье~К. Теория групп Ли. Том III.
+\newblock М.: Государственное издательство
+  иностранной литературы, 1958.
+\newblock 307~{с.}
+
 \end{thebibliography}

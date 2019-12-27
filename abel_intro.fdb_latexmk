@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex abel_intro"] 1577435676 "abel_intro.aux" "abel_intro.bbl" "abel_intro" 1577435679
-  "./utf8gost705u.bst" 1577428922 30555 b8283738b866d2758e625a07b0e52228 ""
-  "abel_intro.aux" 1577435678 1849 9660b9b60bebe3c6cc518eb9a0d700d8 "pdflatex"
-  "biblio.bib" 1577435661 1487 1f3d0291afc2f18b4fda5d466be6067e ""
+["bibtex abel_intro"] 1577437625 "abel_intro.aux" "abel_intro.bbl" "abel_intro" 1577437650
+  "./utf8gost705u.bst" 1577436064 32075 b8283738b866d2758e625a07b0e52228 ""
+  "abel_intro.aux" 1577437626 1947 0a4889f95d3bb1eea492cb27ebcec688 "pdflatex"
+  "biblio.bib" 1577437583 2157 f2a38eb2f796411a5dcb0c3f22af8a5b ""
   (generated)
-  "abel_intro.blg"
   "abel_intro.bbl"
-["pdflatex"] 1577435677 "abel_intro.tex" "abel_intro.pdf" "abel_intro" 1577435679
-  "abel_intro.aux" 1577435678 1849 9660b9b60bebe3c6cc518eb9a0d700d8 "pdflatex"
-  "abel_intro.bbl" 1577435677 560 c84962bdf430d9ced33aaee253e262f2 "bibtex abel_intro"
-  "abel_intro.tex" 1577435670 35122 3ec0f6aa4f8e50feea4153b64dfb1f85 ""
-  "abel_intro.toc" 1577435678 1238 76d1a84898241d03a1c025e12034e680 "pdflatex"
+  "abel_intro.blg"
+["pdflatex"] 1577437625 "abel_intro.tex" "abel_intro.pdf" "abel_intro" 1577437650
+  "abel_intro.aux" 1577437626 1947 0a4889f95d3bb1eea492cb27ebcec688 "pdflatex"
+  "abel_intro.bbl" 1577437625 1167 2781bc93a3cecbbc72da3ddbe6d2397b "bibtex abel_intro"
+  "abel_intro.tex" 1577437649 35226 caca5bbfa130bc09aed13ee4cc0d88ab ""
+  "abel_intro.toc" 1577437626 1238 76d1a84898241d03a1c025e12034e680 "pdflatex"
   "c:/Users/Leonid/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1577426036 3220 0e417eaf233b160335902e97259a6c77 ""
   "c:/Users/Leonid/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1575580208 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "c:/Users/Leonid/.texlive2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1575580210 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
@@ -94,7 +94,7 @@
   "d:/progs/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1575575670 4293177 2c0b22f6cdb6f4f5d3ca8a6ad228631d ""
   "d:/progs/texlive/2019/texmf.cnf" 1575575552 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "abel_intro.aux"
-  "abel_intro.log"
-  "abel_intro.toc"
   "abel_intro.pdf"
+  "abel_intro.toc"
+  "abel_intro.log"
+  "abel_intro.aux"
