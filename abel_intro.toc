@@ -1,0 +1,4 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Введение}{3}%
+\contentsline {subsection}{\numberline {1.1}Подвведение}{4}%
+\contentsline {section}{Список литературы}{5}%

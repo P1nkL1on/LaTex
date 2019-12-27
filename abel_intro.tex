@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+\usepackage[14pt]{extsizes} % для того чтобы задать нестандартный 14-ый размер шрифта
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=15mm, nohead, footskip=10mm]{geometry} % настройки полей документа
+\begin{document} % начало документа
+
+% НАЧАЛО ТИТУЛЬНОГО ЛИСТА
+\begin{center}
+\hfill \break
+\large{МИНОБРНАУКИ РОССИИ}\\
+\footnotesize{ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ}\\
+\footnotesize{ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ}\\
+\small{\textbf{«ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ»}}\\
+\hfill \break
+\textit{Факультет компьютерных наук}\\
+ \hfill \break
+\normalsize{Кафедра цифровых технологий}\\
+\hfill\break
+\hfill \break
+\hfill \break
+\hfill \break
+\large{Интегрирование семимерной алгебры Ли}\\
+\hfill \break
+\hfill \break
+\hfill \break
+\normalsize{Б1.О.08 Математические методы в современных\\\hfill информационных технологиях
+\hfill \break
+09.04.02 Информационные системы и технологии}\\
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\end{center}
+
+\normalsize{
+\begin{tabular}{ccl}
+Обучающийся & \underline{\hspace{3cm}} &И.С. Господарикова, 1 курс маг., д/о\\
+Обучающийся & \underline{\hspace{3cm}} &Л.А. Прохорченко, 1 курс маг., д/о\\
+Руководитель & \underline{\hspace{3cm}}&А.В. Лобода, д.ф-м.н., профессор \\\\
+\end{tabular}
+}\\
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\begin{center} Воронеж 2019 \end{center}
+\thispagestyle{empty} % выключаем отображение номера для этой страницы
+
+% КОНЕЦ ТИТУЛЬНОГО ЛИСТА
+
+\newpage
+
+    \tableofcontents % Вывод содержания
+\newpage
+
+\newpage
+\section{Введение}
+Первый абзац о \cite{Vasylenko92} всякой непонятной \cite{Afanasyev92} информации.
+\newpage
+
+\subsection{Подвведение}
+\newpage
+
+\addcontentsline{toc}{section}{Список литературы}
+\bibliographystyle{utf8gost705u}  %% стилевой файл для оформления по ГОСТу
+\bibliography{biblio}
+\end{document}  % КОНЕЦ ДОКУМЕНТА !

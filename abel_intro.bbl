@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{Vasylenko92}
+\selectlanguageifdefined{ukrainian}
+Василенко~М.~В. Теорiя коливань: Навчальний
+  посiбник.
+\newblock К.: Вища школа, 1992.
+\newblock 430~{с.}
+
+\bibitem{Afanasyev92}
+\selectlanguageifdefined{russian}
+Афанасьев~В.~В., Василевский~О.~Н. Расчеты
+  электрических цепей на программируемых
+  микрокалькуляторах.
+\newblock М.: Энергоиздат, 1992.
+\newblock 190~{с.}
+
+\end{thebibliography}
