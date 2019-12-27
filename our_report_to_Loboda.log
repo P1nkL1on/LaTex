@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  27 DEC 2019 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.5)  27 DEC 2019 10:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**abel_intro.tex
-(./abel_intro.tex
+**our_report_to_Loboda.tex
+(./our_report_to_Loboda.tex
 LaTeX2e <2019-10-01> patch level 3
 (d:/progs/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -405,40 +405,40 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 )
 \everycr=\toks26
 \minrowclearance=\skip57
-) (./abel_intro.aux
+)
+(./our_report_to_Loboda.aux
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 4.
-
-(d:/progs/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+ (d:/progs/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-\openout1 = `abel_intro.aux'.
+\openout1 = `our_report_to_Loboda.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+ftm on input line 27.
-LaTeX Font Info:    No file OT1ftm.fd. on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Trying to load font information for OT1+ftm on input line 22.
+LaTeX Font Info:    No file OT1ftm.fd. on input line 22.
 
 
 LaTeX Font Warning: Font shape `OT1/ftm/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 27.
+(Font)              using `OT1/cmr/m/n' instead on input line 22.
 
-LaTeX Font Info:    Trying to load font information for T2A+ftm on input line 27.
-LaTeX Font Info:    No file T2Aftm.fd. on input line 27.
+LaTeX Font Info:    Trying to load font information for T2A+ftm on input line 22.
+LaTeX Font Info:    No file T2Aftm.fd. on input line 22.
 
 LaTeX Font Warning: Font shape `T2A/ftm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 27.
+(Font)              using `T2A/cmr/m/n' instead on input line 22.
 
 (d:/progs/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -463,24 +463,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 497.92325pt, 56.9055pt)
-* v-part:(T,H,B)=(42.67912pt, 731.23584pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=497.92325pt
-* \textheight=731.23584pt
+* h-part:(L,W,R)=(42.67912pt, 514.71037pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 681.15898pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=514.71037pt
+* \textheight=681.15898pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-29.59087pt
-* \headheight=0.0pt
-* \headsep=0.0pt
+* \topmargin=-68.59087pt
+* \headheight=14.0pt
+* \headsep=25.0pt
 * \topskip=14.0pt
-* \footskip=28.45274pt
-* \marginparwidth=15.0pt
+* \footskip=30.0pt
+* \marginparwidth=24.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 2.0pt
@@ -495,80 +495,32 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 LaTeX Font Warning: Font shape `T2A/ftm/bx/n' undefined
-(Font)              using `T2A/ftm/m/n' instead on input line 35.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
-(d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
- (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--73
-
- []
+(Font)              using `T2A/ftm/m/n' instead on input line 24.
 
 [1
 
-{d:/progs/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./abel_intro.toc)
-\tf@toc=\write3
-\openout3 = `abel_intro.toc'.
-
- [2]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 92.
+{d:/progs/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+ (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+ (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+euf on input line 33.
  (d:/progs/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (31.50705pt too wide) in paragraph at lines 101--108
+Overfull \hbox (14.71992pt too wide) in paragraph at lines 42--49
  [] 
  []
 
-
-Overfull \hbox (3.54825pt too wide) in paragraph at lines 115--116
-[]\T2A/ftm/bx/n/14.4 ћы рас-смат-ри-ва-ем век-тор-ные по-л€ в че-ты-рЉх-мер-ном ком-плекс-ном про-стран-
- []
-
-[3] [4] [5] [6]
-./abel_intro.tex:230: Missing } inserted.
+[2] [3] [4] [5]
+./our_report_to_Loboda.tex:171: Missing } inserted.
 <inserted text> 
                 }
-l.230         $
+l.171         $
                [$e_{2}, e_{5}$]$(f) = -2z_{1} \cdot \frac{\partial f}{\parti...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -576,34 +528,34 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abel_intro.tex:232: Incomplete \ifodd; all text was ignored after line 232.
+./our_report_to_Loboda.tex:173: Incomplete \ifodd; all text was ignored after line 173.
 <inserted text> 
                 \fi 
-l.232         = \\ 
+l.173         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 A forbidden control sequence occurred in skipped text.
 This kind of error happens when you say `\if...' and forget
 the matching `\fi'. I've inserted a `\fi'; this might work.
 
-./abel_intro.tex:232: Missing $ inserted.
+./our_report_to_Loboda.tex:173: Missing $ inserted.
 <inserted text> 
                 $
-l.232         = \\ 
+l.173         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abel_intro.tex:232: Extra \fi.
+./our_report_to_Loboda.tex:173: Extra \fi.
 \math@cr@@@ ...ef \next@ {&\kern -\alignsep@ }\fi 
                                                   \next@ \cr 
-l.232         = \\ 
+l.173         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I'm ignoring this; it doesn't match any \if.
 
-./abel_intro.tex:232: Undefined control sequence.
+./our_report_to_Loboda.tex:173: Undefined control sequence.
 \math@cr@@@ ...t@ {&\kern -\alignsep@ }\fi \next@ 
                                                   \cr 
-l.232         = \\ 
+l.173         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -611,20 +563,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./abel_intro.tex:232: Missing { inserted.
+./our_report_to_Loboda.tex:173: Missing { inserted.
 <inserted text> 
                 {
-l.232         = \\ 
+l.173         = \\ 
                    = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2}...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[7]
-./abel_intro.tex:260: Missing } inserted.
+[6]
+./our_report_to_Loboda.tex:201: Missing } inserted.
 <inserted text> 
                 }
-l.260          $
+l.201          $
                 [$e_{2}, e_{5}$]$(f) = -2z_{1} \cdot \frac{\partial f}{\part...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -632,34 +584,34 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./abel_intro.tex:262: Incomplete \ifodd; all text was ignored after line 262.
+./our_report_to_Loboda.tex:203: Incomplete \ifodd; all text was ignored after line 203.
 <inserted text> 
                 \fi 
-l.262          = \\ 
+l.203          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 A forbidden control sequence occurred in skipped text.
 This kind of error happens when you say `\if...' and forget
 the matching `\fi'. I've inserted a `\fi'; this might work.
 
-./abel_intro.tex:262: Missing $ inserted.
+./our_report_to_Loboda.tex:203: Missing $ inserted.
 <inserted text> 
                 $
-l.262          = \\ 
+l.203          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./abel_intro.tex:262: Extra \fi.
+./our_report_to_Loboda.tex:203: Extra \fi.
 \math@cr@@@ ...ef \next@ {&\kern -\alignsep@ }\fi 
                                                   \next@ \cr 
-l.262          = \\ 
+l.203          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I'm ignoring this; it doesn't match any \if.
 
-./abel_intro.tex:262: Undefined control sequence.
+./our_report_to_Loboda.tex:203: Undefined control sequence.
 \math@cr@@@ ...t@ {&\kern -\alignsep@ }\fi \next@ 
                                                   \cr 
-l.262          = \\ 
+l.203          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -667,56 +619,65 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./abel_intro.tex:262: Missing { inserted.
+./our_report_to_Loboda.tex:203: Missing { inserted.
 <inserted text> 
                 {
-l.262          = \\ 
+l.203          = \\ 
                     = -z_{2} \cdot \frac{\partial f}{\partial z_{1}} + (B_{2...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[8]
+[7]
 
-LaTeX Warning: Command \CYRS invalid in math mode on input line 275.
+LaTeX Warning: Command \CYRS invalid in math mode on input line 216.
 
 Missing character: There is no — in font cmr12!
 
-./abel_intro.tex:299: Package array Error: Empty preamble: `l' used.
+Overfull \hbox (31.39317pt too wide) in paragraph at lines 236--237
+[]\T2A/ftm/m/n/14.4 „то же ка-са-ет-с€ дру-го-го под-слу-ча€, тут мы ча-стич-но вы-пр€м-л€-ем $\OML/cmm/m/it/14.4 e[]$ \T2A/ftm/m/n/14.4 до $\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 z[]; \OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1)$\T2A/ftm/m/n/14.4 .
+ []
+
+
+./our_report_to_Loboda.tex:240: Package array Error: Empty preamble: `l' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.299   \left \{ \begin{array}{}
+l.240   \left \{ \begin{array}{}
                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[9]
-Overfull \hbox (26.75981pt too wide) detected at line 322
-\OML/cmm/m/it/14.4 Re[]e[]\OT1/ftm/m/n/14.4 (^^H)[] = \OML/cmm/m/it/14.4 Re[]\OT1/ftm/m/n/14.4 (\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A \OML/cmm/m/it/14.4 y[]\OT1/ftm/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ^^A [] ^^A \OT1/ftm/m/n/14.4 ([] +\OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/ftm/m/n/14.4 ) + [] \OMS/cmsy/m/n/14.4 ^^A \OT1/ftm/m/n/14.4 ([] + \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/ftm/m/n/14.4 )[] = \OMS/cmsy/m/n/14.4 ^^@[] ^^A \OML/cmm/m/it/14.4 y[] \OT1/ftm/m/n/14.4 + [] \OMS/cmsy/m/n/14.4 ^^A [] \OT1/ftm/m/n/14.4 = 0
+[8]
+Overfull \hbox (9.97473pt too wide) in paragraph at lines 252--253
+[]\T2A/ftm/m/n/14.4 “еперь, име€ €в-ное вы-ра-же-ние дл€ каж-до-го из век-тор-ных по-лей, мож-но наконец-
  []
 
-[10] (./abel_intro.bbl) [11] (./abel_intro.aux)
+
+Overfull \hbox (9.97269pt too wide) detected at line 263
+\OML/cmm/m/it/14.4 Re[]e[]\OT1/cmr/m/n/14.4 (^^H)[] = \OML/cmm/m/it/14.4 Re[]\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A \OML/cmm/m/it/14.4 y[]\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ^^A [] ^^A \OT1/cmr/m/n/14.4 ([] +\OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/cmr/m/n/14.4 ) + [] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 ([] + \OML/cmm/m/it/14.4 i \OMS/cmsy/m/n/14.4 ^^A []\OT1/cmr/m/n/14.4 )[] = \OMS/cmsy/m/n/14.4 ^^@[] ^^A \OML/cmm/m/it/14.4 y[] \OT1/cmr/m/n/14.4 + [] \OMS/cmsy/m/n/14.4 ^^A [] \OT1/cmr/m/n/14.4 = 0
+ []
+
+[9] [10] (./our_report_to_Loboda.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4401 strings out of 492164
- 56618 string characters out of 6126244
- 139653 words of memory out of 5000000
- 8682 multiletter control sequences out of 15000+600000
- 10965 words of font info for 33 fonts, out of 8000000 for 9000
+ 4372 strings out of 492164
+ 56383 string characters out of 6126244
+ 140622 words of memory out of 5000000
+ 8662 multiletter control sequences out of 15000+600000
+ 9366 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,11n,45p,1481b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/progs/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/progs/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on abel_intro.pdf (11 pages, 183522 bytes).
+ 35i,11n,45p,1491b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/progs/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/progs/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on our_report_to_Loboda.pdf (10 pages, 156733 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
